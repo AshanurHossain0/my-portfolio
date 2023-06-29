@@ -6,14 +6,14 @@ const Navbar = () => {
   const [toggle, setToggle] = useState("hidden")
 
   return (
-    <nav className='h-auto md:h-16 bg-white shadow flex flex-col md:flex-row md:items-center md:justify-between w-full border border-b-4'>
+    <nav className='h-auto md:h-16 bg-white shadow flex flex-col md:flex-row md:items-center md:justify-between w-full border border-b-2'>
       <div className=' h-14 flex items-center justify-between mx-4 '>
         <span className=' text-2xl font-sans font-bold text-red-600'>
           Mr.Nur
         </span>
         <div className='md:hidden hover:cursor-pointer' onClick={()=>{(toggle)?setToggle(""):setToggle("hidden")}}>
           {
-            (!toggle) ? <span>&#x2716;</span> : <span className='text-xl font-bold'>&#9776;</span>
+            (!toggle) ? <span className='text-2xl'>&#x2716;</span> : <span className='text-3xl font-bold'>&#9776;</span>
           }
         </div>
       </div>
