@@ -49,7 +49,7 @@ const Home = () => {
         </div>
 
         <div>
-          <img className='w-[300px] md:w-[400px] bg-indigo-50 h-auto rounded-full  p-1' src={profileImg} alt="my-image" />
+          <img className=' w-[300px] md:w-[400px] bg-indigo-50 h-auto rounded-full  p-1' src={profileImg} alt="my-image" />
         </div>
       </div>
       {/* Education and skills */}
