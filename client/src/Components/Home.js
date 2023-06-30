@@ -20,7 +20,7 @@ const Home = () => {
   })
 
   return (
-    <div className='bg-indigo-100'>
+    <div className=''>
       <div className='w-11/12   m-auto flex items-center justify-center' >
         <img className=' w-10 h-auto md:w-16' src={welcome} alt="welcome-img1" />
         <p className='border-dotted border-b-[1px] border-slate-900 text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Welcome to My World</p>
@@ -54,7 +54,9 @@ const Home = () => {
       </div>
       {/* Education and skills */}
 
+      <div>
 
+      </div>
 
 
 

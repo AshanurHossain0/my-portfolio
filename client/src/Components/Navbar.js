@@ -6,7 +6,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState("hidden")
 
   return (
-    <nav className='h-auto md:h-16 shadow flex flex-col md:flex-row md:items-center md:justify-between w-full border border-b-2'>
+    <nav className='bg-white h-auto md:h-16 shadow flex flex-col md:flex-row md:items-center md:justify-between w-full border border-b-2'>
       <div className=' h-14 flex items-center justify-between mx-4 '>
         <span className=' text-2xl font-sans font-bold text-red-600'>
           Mr.Nur
