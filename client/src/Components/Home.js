@@ -7,7 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import profileImg from '../images/profile.png'
-import welcome from '../images/welcome.jpg'
+import welcome from '../images/welcome.png'
 
 
 const Home = () => {
@@ -20,14 +20,14 @@ const Home = () => {
   })
 
   return (
-    <div>
-      <div className='w-11/12  my-2 m-auto flex items-center justify-center' >
-        <img className='w-10 h-auto md:w-16' src={welcome} alt="welcome-img1" />
+    <div className='bg-indigo-100'>
+      <div className='w-11/12   m-auto flex items-center justify-center' >
+        <img className=' w-10 h-auto md:w-16' src={welcome} alt="welcome-img1" />
         <p className='border-dotted border-b-[1px] border-slate-900 text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Welcome to My World</p>
-        <img className='w-8 h-auto md:w-16' src={welcome} alt="welcome-img2" />
+        <img className=' w-10 h-auto md:w-16' src={welcome} alt="welcome-img2" />
       </div>
       <div className='  flex flex-col items-center gap-6 md:flex-row md:justify-between flex-wrap w-11/12 m-auto md:gap-2 mt-4 p-1'>
-        <div className='flex gap-4'>
+        <div className='flex gap-4 '>
           <div className='flex flex-col gap-6 p-1' >
             <a href='https://github.com/AshanurHossain0' target='blank'><GitHubIcon style={{ fontSize: '40px' }} /></a>
             <a href='https://www.linkedin.com/in/ashanur-hossain-545381214/' target='blank'><LinkedInIcon style={{ fontSize: '40px' }} /></a>
@@ -49,9 +49,15 @@ const Home = () => {
         </div>
 
         <div>
-          <img className='w-[300px] md:w-[400px] bg-indigo-100 h-auto rounded-full border border-gray-400 p-1' src={profileImg} alt="my-image" />
+          <img className='w-[300px] md:w-[400px] bg-indigo-50 h-auto rounded-full  p-1' src={profileImg} alt="my-image" />
         </div>
       </div>
+      {/* Education and skills */}
+
+
+
+
+
     </div>
   )
 }
