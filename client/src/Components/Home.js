@@ -7,6 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
 import profileImg from '../images/profile.png'
+import welcome from '../images/welcome.jpg'
 
 
 const Home = () => {
@@ -14,16 +15,18 @@ const Home = () => {
   const [text]=useTypewriter({
     words:['Fullstack Developer','Web Designer','Youtuber'],
     loop:{},
-    typeSpeed:150,
-    deleteSpeed:50
+    typeSpeed:100,
+    deleteSpeed:30
   })
 
   return (
     <div>
-      <div className='w-11/12 border border-red-700 my-2 m-auto' >
-        <p className='text-center p-2 font-semibold text-xl md:text-3xl'>Welcome to My World</p>
+      <div className='w-11/12  my-2 m-auto flex items-center justify-center' >
+        <img className='w-8 h-auto md:w-16' src={welcome} alt="welcome-img1" />
+        <p className='border-dotted border-b-[1px] border-slate-900 text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Welcome to My World</p>
+        <img className='w-8 h-auto md:w-16' src={welcome} alt="welcome-img2" />
       </div>
-      <div className='border border-slate-900 flex flex-col items-center gap-6 md:flex-row md:justify-between flex-wrap w-11/12 m-auto md:gap-2 mt-4'>
+      <div className='  flex flex-col items-center gap-6 md:flex-row md:justify-between flex-wrap w-11/12 m-auto md:gap-2 mt-4 p-1'>
         <div className='flex gap-4'>
           <div className='flex flex-col gap-6 p-1' >
             <a href='https://github.com/AshanurHossain0' target='blank'><GitHubIcon style={{ fontSize: '40px' }} /></a>
@@ -35,7 +38,7 @@ const Home = () => {
             <div>
               <p className='font-bold text-3xl md:text-5xl mb-4'>Hi, I'm Ashanur</p>
               <p className='text-2xl md:text-3xl'>A Passionate & Curious</p>
-              <p><span className='text-2xl md:text-3xl text-purple-600'>{text}</span><span className='text-3xl'><Cursor/></span> </p>
+              <p><span className='text-2xl md:text-3xl text-purple-600'>{text}</span><span className='text-3xl  text-purple-600'><Cursor/></span> </p>
               <p className='text-2xl md:text-3xl'>From India</p>
               <p className='md:text-xl mt-1 mb-4'>High level experience in web design and development</p>
             </div>
