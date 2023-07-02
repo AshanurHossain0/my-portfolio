@@ -1,5 +1,5 @@
 import React from 'react'
-import {useTypewriter,Cursor} from 'react-simple-typewriter'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -15,11 +15,11 @@ import welcome from '../images/welcome.png'
 
 const Home = () => {
 
-  const [text]=useTypewriter({
-    words:['Fullstack Developer','Web Designer','Youtuber'],
-    loop:{},
-    typeSpeed:100,
-    deleteSpeed:30
+  const [text] = useTypewriter({
+    words: ['Fullstack Developer', 'Web Designer', 'Youtuber'],
+    loop: {},
+    typeSpeed: 100,
+    deleteSpeed: 30
   })
 
   return (
@@ -41,7 +41,7 @@ const Home = () => {
             <div>
               <p className='font-bold text-3xl md:text-5xl mb-4'>Hi, I'm Ashanur</p>
               <p className='text-2xl md:text-3xl'>A Passionate & Curious</p>
-              <p><span className='text-2xl md:text-3xl text-purple-600'>{text}</span><span className='text-3xl  text-purple-600'><Cursor/></span> </p>
+              <p><span className='text-2xl md:text-3xl text-purple-600'>{text}</span><span className='text-3xl  text-purple-600'><Cursor /></span> </p>
               <p className='text-2xl md:text-3xl'>From India</p>
               <p className='md:text-xl mt-1 mb-4'>High level experience in web design and development</p>
             </div>
@@ -57,14 +57,41 @@ const Home = () => {
       </div>
       {/* Education and skills */}
 
-      <div className='w-11/12   m-auto flex items-center justify-center mt-4' >
-        <SchoolIcon style={{fontSize:"30px",color: "rgb(37 99 235)"}} />
-        <p className='border-dotted border-b-[1px] border-slate-900 text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Education & Skills</p>
-        <ComputerIcon style={{fontSize:"30px",color: "rgb(37 99 235)"}} />
-      </div>
-      <div>
+      <div className='border border-indigo-300 my-6 md:my-10'></div>
+      <div className=' border border-red-500 flex flex-col md:flex-row  my-6 mx-2 md:my-8 md:mx-4'>
+        <div className='border border-green-500  w-full md:w-2/4 '>
+          <div className='flex items-center justify-center'>
+            <SchoolIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
+            <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Education</p>
+          </div>
+          <div>
+            <div className='bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-2'>
+              <p className=' flex justify-between '><a href='https://makautwb.ac.in/' target='blank' className='text-blue-400 hover:text-blue-500 duration-500 font-semibold md:text-xl'><span>MAKAUT</span></a> <span className='md:text-[18px]'>[July,2018 - July,2022]</span></p>
+              <p><a className=' font-semibold md:text-xl text-blue-400  hover:text-blue-500 duration-500' href="http://cgec.org.in/" target='blank'>Cooch Behar Government Engineering College</a></p>
+              <p className='text-[15px] md:text-[20px] flex justify-between' >B.Tech in Electronics & Communication</p>
+              <p className='text-[15px] md:text-[20px]'>Securing <span className='font-semibold'>8.58</span> CGPA</p>
+            </div>
+            <div className='bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-1'>
+              <p className=' flex justify-between '><a href='https://wbchse.wb.gov.in/' target='blank' className='text-blue-400 hover:text-blue-500 duration-500 font-semibold md:text-xl'><span>WBCHSE</span></a> <span className='md:text-[18px]'>[June,2016 - May,2018]</span></p>
+              <p><a className=' font-semibold md:text-xl text-blue-400  hover:text-blue-500 duration-500' href="https://school.banglarshiksha.gov.in/ws/website/index/19030408602" target='blank'>Natabari High School</a></p>
+              <p className='text-[15px] md:text-[20px] flex justify-between' >Higher Secondary in Science</p>
+              <p className='text-[15px] md:text-[20px]'>Securing <span className='font-semibold'>81.60</span> Percentage</p>
+            </div>
+            <div className='bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-1'>
+              <p className=' flex justify-between '><a href='https://wbbse.wb.gov.in/Web/Home?l=Z%2F%2F2JeEw6P%2FkXiUjdLauQg%3D%3D' target='blank' className='text-blue-400 hover:text-blue-500 duration-500 font-semibold md:text-xl'><span>WBBSE</span></a> <span className='md:text-[18px]'>[Jan,2010 - May,2016]</span></p>
+              <p><a className=' font-semibold md:text-xl text-blue-400  hover:text-blue-500 duration-500' href="https://school.banglarshiksha.gov.in/ws/website/index/19030409002" target='blank'>Bhelapeta High School</a></p>
+              <p className='text-[15px] md:text-[20px] flex justify-between' ><span>Madhyamik (10<sup>th</sup>)</span></p>
+              <p className='text-[15px] md:text-[20px]'>Securing <span className='font-semibold'>77.00</span> Percentage</p>
+            </div>
+          </div>
+        </div>
 
+        <div className='border border-green-500 flex items-center justify-center w-full md:w-2/4'>
+          <ComputerIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
+          <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Skills</p>
+        </div>
       </div>
+
 
 
 

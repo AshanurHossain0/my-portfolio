@@ -7,6 +7,7 @@ import About from './Components/About';
 import Contact from './Components/Contact';
 import Experience from './Components/Experience';
 import Navbar from './Components/Navbar';
+import Resume from './Components/Resume';
 
 
 
@@ -20,6 +21,7 @@ const App = () => {
           <Route path='/about' element={<About/>}/>
           <Route path='/experience' element={<Experience/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/resume' element={<Resume/>}/>
         </Routes>
       </div>     
     </BrowserRouter>
