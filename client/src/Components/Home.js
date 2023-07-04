@@ -9,6 +9,8 @@ import SendIcon from '@mui/icons-material/Send';
 import ComputerIcon from '@mui/icons-material/Computer';
 import SchoolIcon from '@mui/icons-material/School';
 
+import Perform from './Perform';
+
 import profileImg from '../images/profile.png'
 import welcome from '../images/welcome.png'
 
@@ -58,9 +60,9 @@ const Home = () => {
       {/* Education and skills */}
 
       <div className='border border-indigo-300 my-6 md:my-10'></div>
-      <div className=' border border-red-500 flex flex-col md:flex-row  my-6 mx-2 md:my-8 md:mx-4'>
+      <div className=' border border-red-500 flex flex-col gap-4 md:gap-0  md:flex-row  my-6 mx-2 md:my-8 md:mx-4'>
         <div className='border border-green-500  w-full md:w-2/4 '>
-          <div className='flex items-center justify-center'>
+          <div className='border border-red-900 flex justify-center items-center h-8 md:h-10 w-full'>
             <SchoolIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
             <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Education</p>
           </div>
@@ -86,9 +88,25 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='border border-green-500 flex items-center justify-center w-full md:w-2/4'>
-          <ComputerIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
-          <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Skills</p>
+        <div className='border border-green-500  w-full md:w-2/4'>
+          <div className='border border-red-900 flex justify-center items-center h-8 md:h-10 w-full'>
+            <ComputerIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
+            <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Skills</p>
+          </div>
+          <div className='m-2 flex flex-wrap gap-2'>
+            <div className=' border border-red-900 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-1'>
+              <Perform elId="cpp"  performance={85} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="cpp-logo" />
+              <p className='text-xl font-semibold md:text-2xl text-blue-600'>C++</p>
+            </div>
+            <div className=' border border-red-900 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-1'>
+              <Perform elId="java" performance={75} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="java-logo" />
+              <p className='text-xl font-semibold md:text-2xl text-blue-600'>Java</p>
+            </div>
+            <div className=' border border-red-900 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-1'>
+              <Perform elId="js" performance={92} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="cpp-logo" />
+              <p className='text-xl font-semibold md:text-2xl text-blue-600'>Javascript</p>
+            </div>
+          </div>
         </div>
       </div>
 
