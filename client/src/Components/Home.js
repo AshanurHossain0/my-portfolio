@@ -96,15 +96,15 @@ const Home = () => {
           <div className='m-2 flex flex-wrap gap-2'>
             <div className=' border border-red-900 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-1'>
               <Perform elId="cpp"  performance={85} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="cpp-logo" />
-              <p className='text-xl font-semibold md:text-2xl text-blue-600'>C++</p>
+              <p className='text-xl  md:text-2xl text-blue-600'>C++</p>
             </div>
             <div className=' border border-red-900 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-1'>
-              <Perform elId="java" performance={75} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="java-logo" />
-              <p className='text-xl font-semibold md:text-2xl text-blue-600'>Java</p>
+              <Perform elId="java" performance={75} src="https://img.icons8.com/color/480/java-coffee-cup-logo--v1.png" alt="java-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>Java</p>
             </div>
             <div className=' border border-red-900 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-1'>
-              <Perform elId="js" performance={92} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="cpp-logo" />
-              <p className='text-xl font-semibold md:text-2xl text-blue-600'>Javascript</p>
+              <Perform elId="js"  performance={92} src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png" alt="js-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>Javascript</p>
             </div>
           </div>
         </div>
