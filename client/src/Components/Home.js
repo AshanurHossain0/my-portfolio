@@ -64,22 +64,22 @@ const Home = () => {
         <div className=' w-full md:w-2/4 '>
           <div className=' flex justify-center items-center h-8 md:h-10 w-full'>
             <SchoolIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
-            <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Education</p>
+            <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2 animate-bounce hover:animate-spin'>Education</p>
           </div>
           <div className='flex flex-col justify-arround'>
-            <div className='bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-2'>
+            <div className='hover:shadow-2xl bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-2'>
               <p className=' flex justify-between '><a href='https://makautwb.ac.in/' target='blank' className='text-blue-400 hover:text-blue-500 duration-500 font-semibold md:text-xl'><span>MAKAUT</span></a> <span className='md:text-[18px]'>[July,2018 - July,2022]</span></p>
               <p><a className=' font-semibold md:text-xl text-blue-400  hover:text-blue-500 duration-500' href="http://cgec.org.in/" target='blank'>Cooch Behar Government Engineering College</a></p>
               <p className='text-[15px] md:text-[20px] flex justify-between' >B.Tech in Electronics & Communication</p>
               <p className='text-[15px] md:text-[20px]'>Securing <span className='font-semibold'>8.58</span> CGPA</p>
             </div>
-            <div className='bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-1 '>
+            <div className='hover:shadow-2xl bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-1 '>
               <p className=' flex justify-between '><a href='https://wbchse.wb.gov.in/' target='blank' className='text-blue-400 hover:text-blue-500 duration-500 font-semibold md:text-xl'><span>WBCHSE</span></a> <span className='md:text-[18px]'>[June,2016 - May,2018]</span></p>
               <p><a className=' font-semibold md:text-xl text-blue-400  hover:text-blue-500 duration-500' href="https://school.banglarshiksha.gov.in/ws/website/index/19030408602" target='blank'>Natabari High School</a></p>
               <p className='text-[15px] md:text-[20px] flex justify-between' >Higher Secondary in Science</p>
               <p className='text-[15px] md:text-[20px]'>Securing <span className='font-semibold'>81.60</span> Percentage</p>
             </div>
-            <div className='bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-1'>
+            <div className='hover:shadow-2xl bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-1'>
               <p className=' flex justify-between '><a href='https://wbbse.wb.gov.in/Web/Home?l=Z%2F%2F2JeEw6P%2FkXiUjdLauQg%3D%3D' target='blank' className='text-blue-400 hover:text-blue-500 duration-500 font-semibold md:text-xl'><span>WBBSE</span></a> <span className='md:text-[18px]'>[Jan,2010 - May,2016]</span></p>
               <p><a className=' font-semibold md:text-xl text-blue-400  hover:text-blue-500 duration-500' href="https://school.banglarshiksha.gov.in/ws/website/index/19030409002" target='blank'>Bhelapeta High School</a></p>
               <p className='text-[15px] md:text-[20px] flex justify-between' ><span>Madhyamik (10<sup>th</sup>)</span></p>
@@ -91,7 +91,7 @@ const Home = () => {
         <div className=' w-full md:w-2/4'>
           <div className=' flex justify-center items-center h-8 md:h-10 w-full'>
             <ComputerIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
-            <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Skills</p>
+            <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2 animate-bounce hover:animate-spin'>Skills</p>
           </div>
           <div className='m-2 flex justify-around flex-wrap gap-2'>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl '>
