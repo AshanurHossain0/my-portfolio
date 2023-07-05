@@ -100,23 +100,23 @@ const Home = () => {
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="java" performance={75} src="https://img.icons8.com/color/480/java-coffee-cup-logo--v1.png" alt="java-logo" />
-              <p className='text-xl  md:text-2xl text-blue-600'>Java</p>
+              <p className='text-xl  md:text-2xl text-red-400'>Java</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="js"  performance={92} src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png" alt="js-logo" />
-              <p className='text-xl  md:text-2xl text-blue-600'>Javascript</p>
+              <p className='text-xl  md:text-2xl text-yellow-600 '>Javascript</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="node"  performance={90} src="https://img.icons8.com/fluency/48/node-js.png" alt="node-logo" />
-              <p className='text-xl  md:text-2xl text-blue-600'>Node.js</p>
+              <p className='text-xl  md:text-2xl text-green-600'>Node.js</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="mongo"  performance={90} src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb-logo" />
-              <p className='text-xl  md:text-2xl text-blue-600'>MongoDB</p>
+              <p className='text-xl  md:text-2xl text-green-600'>MongoDB</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="express"  performance={85} src="https://img.icons8.com/offices/30/express-js.png" alt="express-logo" />
-              <p className='text-xl  md:text-2xl text-blue-600'>Express.js</p>
+              <p className='text-xl  md:text-2xl '>Express.js</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="react"  performance={75} src="https://img.icons8.com/officel/16/react.png" alt="react-logo" />
@@ -124,15 +124,15 @@ const Home = () => {
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="redux"  performance={70} src="https://img.icons8.com/color/480/redux.png" alt="redux-logo" />
-              <p className='text-xl  md:text-2xl text-blue-600'>Redux</p>
+              <p className='text-xl  md:text-2xl text-purple-600'>Redux</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="redis"  performance={75} src="https://img.icons8.com/color/480/redis.png" alt="redis-logo" />
-              <p className='text-xl  md:text-2xl text-blue-600'>Redis</p>
+              <p className='text-xl  md:text-2xl text-red-600'>Redis</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="html"  performance={90} src="https://img.icons8.com/color/480/html-5--v1.png" alt="html-logo" />
-              <p className='text-xl  md:text-2xl text-blue-600'>HTML5</p>
+              <p className='text-xl  md:text-2xl text-yellow-700'>HTML5</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="css"  performance={76} src="https://img.icons8.com/color/480/css3.png" alt="css-logo" />
@@ -140,7 +140,7 @@ const Home = () => {
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="tailwind"  performance={77} src="https://img.icons8.com/color/48/tailwindcss.png" alt="tailwind-logo" />
-              <p className='text-xl  md:text-2xl text-blue-600'>Tailwind</p>
+              <p className='text-xl  md:text-2xl text-cyan-500'>Tailwind</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="oops"  performance={82} src="" alt="" />
