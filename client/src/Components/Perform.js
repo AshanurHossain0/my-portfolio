@@ -15,7 +15,7 @@ const Perform = ({ performance,src,alt,elId }) => {
     }
     return (
         <div onMouseOver={progress} >
-            <Wrapper id={elId} className={` rounded-full flex justify-center items-center w-[90px] h-[90px] md:h-[100px] md:w-[100px]`} performance={performance} >
+            <Wrapper id={elId} className={` rounded-full flex justify-center items-center w-[90px] h-[90px] md:h-[100px] md:w-[100px] md:hover:w-[103px] `} performance={performance} >
                 <div className=' rounded-full bg-white flex-col flex justify-center items-center w-[70px] h-[70px]  md:h-[70px] md:w-[70px]'>
                     <img className='w-10 md:w-10 ' src={src} alt={alt}  />
                     <p className='text-[10px] text-lg md:font-bold text-blue-600'>{performance}%</p>

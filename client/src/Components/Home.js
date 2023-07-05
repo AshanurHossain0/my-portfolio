@@ -60,20 +60,20 @@ const Home = () => {
       {/* Education and skills */}
 
       <div className='border border-indigo-300 my-6 md:my-10'></div>
-      <div className=' border border-red-500 flex flex-col gap-4 md:gap-0  md:flex-row  my-6 mx-2 md:my-8 md:mx-4'>
-        <div className='border border-green-500  w-full md:w-2/4 '>
-          <div className='border border-red-900 flex justify-center items-center h-8 md:h-10 w-full'>
+      <div className='  flex flex-col gap-4 md:gap-0  md:flex-row  my-6 mx-2 md:my-8 md:mx-4'>
+        <div className=' w-full md:w-2/4 '>
+          <div className=' flex justify-center items-center h-8 md:h-10 w-full'>
             <SchoolIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
             <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Education</p>
           </div>
-          <div>
+          <div className='flex flex-col justify-arround'>
             <div className='bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-2'>
               <p className=' flex justify-between '><a href='https://makautwb.ac.in/' target='blank' className='text-blue-400 hover:text-blue-500 duration-500 font-semibold md:text-xl'><span>MAKAUT</span></a> <span className='md:text-[18px]'>[July,2018 - July,2022]</span></p>
               <p><a className=' font-semibold md:text-xl text-blue-400  hover:text-blue-500 duration-500' href="http://cgec.org.in/" target='blank'>Cooch Behar Government Engineering College</a></p>
               <p className='text-[15px] md:text-[20px] flex justify-between' >B.Tech in Electronics & Communication</p>
               <p className='text-[15px] md:text-[20px]'>Securing <span className='font-semibold'>8.58</span> CGPA</p>
             </div>
-            <div className='bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-1'>
+            <div className='bg-indigo-50 p-2 m-1 border border-gray-400 rounded-3xl mt-1 '>
               <p className=' flex justify-between '><a href='https://wbchse.wb.gov.in/' target='blank' className='text-blue-400 hover:text-blue-500 duration-500 font-semibold md:text-xl'><span>WBCHSE</span></a> <span className='md:text-[18px]'>[June,2016 - May,2018]</span></p>
               <p><a className=' font-semibold md:text-xl text-blue-400  hover:text-blue-500 duration-500' href="https://school.banglarshiksha.gov.in/ws/website/index/19030408602" target='blank'>Natabari High School</a></p>
               <p className='text-[15px] md:text-[20px] flex justify-between' >Higher Secondary in Science</p>
@@ -88,24 +88,69 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='border border-green-500  w-full md:w-2/4'>
-          <div className='border border-red-900 flex justify-center items-center h-8 md:h-10 w-full'>
+        <div className=' w-full md:w-2/4'>
+          <div className=' flex justify-center items-center h-8 md:h-10 w-full'>
             <ComputerIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
             <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Skills</p>
           </div>
-          <div className='m-2 flex flex-wrap gap-2'>
-            <div className=' border border-red-900 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-1'>
+          <div className='m-2 flex justify-around flex-wrap gap-2'>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl '>
               <Perform elId="cpp"  performance={85} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="cpp-logo" />
               <p className='text-xl  md:text-2xl text-blue-600'>C++</p>
             </div>
-            <div className=' border border-red-900 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-1'>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="java" performance={75} src="https://img.icons8.com/color/480/java-coffee-cup-logo--v1.png" alt="java-logo" />
               <p className='text-xl  md:text-2xl text-blue-600'>Java</p>
             </div>
-            <div className=' border border-red-900 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-1'>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="js"  performance={92} src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png" alt="js-logo" />
               <p className='text-xl  md:text-2xl text-blue-600'>Javascript</p>
             </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="node"  performance={90} src="https://img.icons8.com/fluency/48/node-js.png" alt="node-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>Node.js</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="mongo"  performance={90} src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>MongoDB</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="express"  performance={85} src="https://img.icons8.com/offices/30/express-js.png" alt="express-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>Express.js</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="react"  performance={75} src="https://img.icons8.com/officel/16/react.png" alt="react-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>React</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="redux"  performance={70} src="https://img.icons8.com/color/480/redux.png" alt="redux-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>Redux</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="redis"  performance={75} src="https://img.icons8.com/color/480/redis.png" alt="redis-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>Redis</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="html"  performance={90} src="https://img.icons8.com/color/480/html-5--v1.png" alt="html-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>HTML5</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="css"  performance={76} src="https://img.icons8.com/color/480/css3.png" alt="css-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>CSS3</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="tailwind"  performance={77} src="https://img.icons8.com/color/48/tailwindcss.png" alt="tailwind-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>Tailwind</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="oops"  performance={82} src="" alt="" />
+              <p className='text-xl  md:text-2xl text-blue-600'>OOPS</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="dsa"  performance={80} src="https://img.icons8.com/cotton/64/tree-structure.png" alt="dsa-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600'>DSA</p>
+            </div>
+            
           </div>
         </div>
       </div>
