@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -23,6 +23,10 @@ const Home = () => {
     typeSpeed: 100,
     deleteSpeed: 30
   })
+  const [showSkill,setShowSkill]=useState("hidden")
+  const changeShowSkill=()=>{
+    showSkill?setShowSkill(""):setShowSkill("hidden");
+  }
 
   return (
     <div className=''>
@@ -93,7 +97,9 @@ const Home = () => {
             <ComputerIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
             <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2 animate-bounce hover:animate-spin'>Skills</p>
           </div>
-          <div className='m-2 flex justify-around flex-wrap gap-2'>
+          <p onClick={changeShowSkill} className='block md:hidden bg-blue-600 hover:bg-blue-700 hover:shadow-md text-white text-sm rounded-lg text-center w-[150px] m-4'>click to {(showSkill)?`see skills`:`hide skills`}</p>
+          <div className= {`${showSkill} ${(!showSkill)?"flex":""} m-2 md:flex justify-around flex-wrap gap-2`}>
+            
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl '>
               <Perform elId="cpp"  performance={85} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="cpp-logo" />
               <p className='text-xl  md:text-2xl text-blue-600'>C++</p>

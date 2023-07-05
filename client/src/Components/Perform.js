@@ -10,7 +10,7 @@ const Perform = ({ performance,src,alt,elId }) => {
         let id = setInterval(() => {
             start++;
             if (start == end) clearInterval(id);
-            document.getElementById(`${elId}`).style.background = `conic-gradient(green ${start * 3.6}deg, gray ${0}deg)`
+            document.getElementById(`${elId}`).style.background = `conic-gradient(#a0aadf ${start * 3.6}deg, gray ${0}deg)`
         }, 5)
     }
     return (
@@ -30,5 +30,5 @@ export default Perform
 
 
 const Wrapper = styled.div`
-    background:conic-gradient(green ${props => props.performance * 3.6}deg, gray 0deg) 
+    background:conic-gradient(#a0aadf ${props => props.performance * 3.6}deg, gray 0deg) 
 `;
