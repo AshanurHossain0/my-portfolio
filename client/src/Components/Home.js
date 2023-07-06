@@ -10,6 +10,7 @@ import ComputerIcon from '@mui/icons-material/Computer';
 import SchoolIcon from '@mui/icons-material/School';
 
 import Perform from './Perform';
+import Resume from '../images/resume.pdf'
 
 import profileImg from '../images/profile.png'
 import welcome from '../images/welcome.png'
@@ -163,7 +164,7 @@ const Home = () => {
       <div className='w-full h-auto  bg-slate-900 '>
         <div className='footer w-full h-auto  p-3 md:p-6 flex justify-around flex-wrap gap-2'>
           <div className=''>
-            <p className='md:text-[18px] text-blue-600 hover:text-blue-700 hover:cursor-pointer'>Download Resume</p>
+            <p className='md:text-[18px] text-blue-600 hover:text-blue-700 hover:cursor-pointer'><a href={Resume} download="resume.pdf" target="_blank" rel="noreferrer" >Download Resume</a></p>
           </div>
           <div className='flex flex-col' >
             <a className='text-blue-600 hover:text-blue-700 hover:cursor-pointer' href="https://www.hackerrank.com/ashanurhossain98?hr_r=1" target="blank">Hackerrank Profile</a>
