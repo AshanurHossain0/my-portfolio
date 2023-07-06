@@ -23,9 +23,9 @@ const Home = () => {
     typeSpeed: 100,
     deleteSpeed: 30
   })
-  const [showSkill,setShowSkill]=useState("hidden")
-  const changeShowSkill=()=>{
-    showSkill?setShowSkill(""):setShowSkill("hidden");
+  const [showSkill, setShowSkill] = useState("hidden")
+  const changeShowSkill = () => {
+    showSkill ? setShowSkill("") : setShowSkill("hidden");
   }
 
   return (
@@ -97,11 +97,11 @@ const Home = () => {
             <ComputerIcon style={{ fontSize: "26px", color: "rgb(37 99 235)" }} />
             <p className=' text-center p-2 font-semibold text-xl md:text-3xl text-blue-600 mx-2 animate-bounce hover:animate-spin'>Skills</p>
           </div>
-          <p onClick={changeShowSkill} className='block md:hidden bg-blue-600 hover:bg-blue-700 hover:shadow-md text-white text-sm rounded-lg text-center w-[150px] m-4'>click to {(showSkill)?`see skills`:`hide skills`}</p>
-          <div className= {`${showSkill} ${(!showSkill)?"flex":""} m-2 md:flex justify-around flex-wrap gap-2`}>
-            
+          <p onClick={changeShowSkill} className='block md:hidden bg-blue-600 hover:bg-blue-700 hover:shadow-md text-white text-sm rounded-lg text-center w-[150px] m-4'>click to {(showSkill) ? `see skills` : `hide skills`}</p>
+          <div className={`${showSkill} ${(!showSkill) ? "flex" : ""} m-2 md:flex justify-around flex-wrap gap-2`}>
+
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl '>
-              <Perform elId="cpp"  performance={85} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="cpp-logo" />
+              <Perform elId="cpp" performance={85} src="https://img.icons8.com/color/480/c-plus-plus-logo.png" alt="cpp-logo" />
               <p className='text-xl  md:text-2xl text-blue-600'>C++</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
@@ -109,58 +109,70 @@ const Home = () => {
               <p className='text-xl  md:text-2xl text-red-400'>Java</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="js"  performance={92} src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png" alt="js-logo" />
+              <Perform elId="js" performance={92} src="https://img.icons8.com/ios-filled/50/000000/javascript-logo.png" alt="js-logo" />
               <p className='text-xl  md:text-2xl text-yellow-600 '>Javascript</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="node"  performance={90} src="https://img.icons8.com/fluency/48/node-js.png" alt="node-logo" />
+              <Perform elId="node" performance={90} src="https://img.icons8.com/fluency/48/node-js.png" alt="node-logo" />
               <p className='text-xl  md:text-2xl text-green-600'>Node.js</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="mongo"  performance={90} src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb-logo" />
+              <Perform elId="mongo" performance={90} src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-mongodb-a-cross-platform-document-oriented-database-program-logo-color-tal-revivo.png" alt="mongodb-logo" />
               <p className='text-xl  md:text-2xl text-green-600'>MongoDB</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="express"  performance={85} src="https://img.icons8.com/offices/30/express-js.png" alt="express-logo" />
+              <Perform elId="express" performance={85} src="https://img.icons8.com/offices/30/express-js.png" alt="express-logo" />
               <p className='text-xl  md:text-2xl '>Express.js</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="react"  performance={75} src="https://img.icons8.com/officel/16/react.png" alt="react-logo" />
+              <Perform elId="react" performance={75} src="https://img.icons8.com/officel/16/react.png" alt="react-logo" />
               <p className='text-xl  md:text-2xl text-blue-600'>React</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="redux"  performance={70} src="https://img.icons8.com/color/480/redux.png" alt="redux-logo" />
+              <Perform elId="redux" performance={70} src="https://img.icons8.com/color/480/redux.png" alt="redux-logo" />
               <p className='text-xl  md:text-2xl text-purple-600'>Redux</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="redis"  performance={75} src="https://img.icons8.com/color/480/redis.png" alt="redis-logo" />
+              <Perform elId="redis" performance={75} src="https://img.icons8.com/color/480/redis.png" alt="redis-logo" />
               <p className='text-xl  md:text-2xl text-red-600'>Redis</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="html"  performance={90} src="https://img.icons8.com/color/480/html-5--v1.png" alt="html-logo" />
+              <Perform elId="html" performance={90} src="https://img.icons8.com/color/480/html-5--v1.png" alt="html-logo" />
               <p className='text-xl  md:text-2xl text-yellow-700'>HTML5</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="css"  performance={76} src="https://img.icons8.com/color/480/css3.png" alt="css-logo" />
+              <Perform elId="css" performance={76} src="https://img.icons8.com/color/480/css3.png" alt="css-logo" />
               <p className='text-xl  md:text-2xl text-blue-600'>CSS3</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="tailwind"  performance={77} src="https://img.icons8.com/color/48/tailwindcss.png" alt="tailwind-logo" />
+              <Perform elId="tailwind" performance={77} src="https://img.icons8.com/color/48/tailwindcss.png" alt="tailwind-logo" />
               <p className='text-xl  md:text-2xl text-cyan-500'>Tailwind</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="oops"  performance={82} src="" alt="" />
+              <Perform elId="oops" performance={82} src="" alt="" />
               <p className='text-xl  md:text-2xl text-blue-600'>OOPS</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
-              <Perform elId="dsa"  performance={80} src="https://img.icons8.com/cotton/64/tree-structure.png" alt="dsa-logo" />
+              <Perform elId="dsa" performance={80} src="https://img.icons8.com/cotton/64/tree-structure.png" alt="dsa-logo" />
               <p className='text-xl  md:text-2xl text-blue-600'>DSA</p>
             </div>
-            
+
           </div>
         </div>
       </div>
-
+      <div className='w-full h-auto  bg-slate-900 '>
+        <div className='footer w-full h-auto  p-3 md:p-6 flex justify-around flex-wrap gap-2'>
+          <div className=''>
+            <p className='md:text-[18px] text-blue-600 hover:text-blue-700 hover:cursor-pointer'>Download Resume</p>
+          </div>
+          <div className='flex flex-col' >
+            <a className='text-blue-600 hover:text-blue-700 hover:cursor-pointer' href="https://www.hackerrank.com/ashanurhossain98?hr_r=1" target="blank">Hackerrank Profile</a>
+            <a className='text-blue-600 hover:text-blue-700 hover:cursor-pointer' href="https://leetcode.com/AshanurHossain/" target="blank">Leetcode Profile</a>
+          </div>
+          <div className='text-green-500'>Thank You for visit my site</div>
+        </div>
+        <div className='w-full p-2' ><p className='text-orange-900 text-center'>copyright@2023_ashanur</p></div>
+      </div>
 
 
 
