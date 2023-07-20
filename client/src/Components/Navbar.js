@@ -19,10 +19,10 @@ const Navbar = () => {
       </div>
 
       <div className={'flex flex-col items-start md:flex-row md:items-center font-mono md:block ' + toggle} >
-        <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' to="/">Home</Link>
-        <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' to="/about">About</Link>
-        <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' to="/experience">Experience</Link>
-        <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' to="/contact">Contact</Link>
+        <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' onClick={()=>{setToggle("hidden")}} to="/">Home</Link>
+        <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' onClick={()=>{setToggle("hidden")}} to="/about">About</Link>
+        <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' onClick={()=>{setToggle("hidden")}} to="/experience">Experience</Link>
+        <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' onClick={()=>{setToggle("hidden")}} to="/contact">Contact</Link>
       </div>
     </nav>
   )

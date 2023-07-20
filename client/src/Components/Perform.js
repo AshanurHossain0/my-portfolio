@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 
@@ -9,7 +9,7 @@ const Perform = ({ performance,src,alt,elId }) => {
         let start = 0,end = performance;
         let id = setInterval(() => {
             start++;
-            if (start == end) clearInterval(id);
+            if (start === end) clearInterval(id);
             document.getElementById(`${elId}`).style.background = `conic-gradient(#a0aadf ${start * 3.6}deg, gray ${0}deg)`
         }, 5)
     }
