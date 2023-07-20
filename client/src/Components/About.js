@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='flex flex-col md:flex-row justify-evenly m:0 md:mt-2 w-full h-auto'>
       <div className='flex justify-center w-full md:w-1/3  md:mb-0 mb-8 h-auto'>
-        <img className='rounded-md w-11/12 ' src={aboutImg} alt='about'  />
+        <img className='rounded-md w-11/12 h-[440px] sm:h-[600px] md:h-[300px] lg:h-[500px]' src={aboutImg} alt='about'  />
       </div>
       <div className='w-full md:w-3/5 '>
         <p className='text-center font-semibold text-xl md:text-3xl text-blue-600 mx-2'>Who am I?</p>
