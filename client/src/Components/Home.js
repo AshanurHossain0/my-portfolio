@@ -172,7 +172,7 @@ const Home = () => {
           </div>
           <div className='text-green-500'>Thank You for visit my site</div>
         </div>
-        <div className='w-full p-2' ><p className='text-orange-900 text-center'>copyright@2023_ashanur</p></div>
+        <div className='w-full p-2' ><p className='text-orange-900 text-center'>copyright@ashanur_2023</p></div>
       </div>
 
 

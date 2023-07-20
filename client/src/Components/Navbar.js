@@ -22,7 +22,6 @@ const Navbar = () => {
         <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' onClick={()=>{setToggle("hidden")}} to="/">Home</Link>
         <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' onClick={()=>{setToggle("hidden")}} to="/about">About</Link>
         <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' onClick={()=>{setToggle("hidden")}} to="/experience">Experience</Link>
-        <Link className='hover:text-cyan-500 text-xl duration-500 mx-4 my-4 md:mx-6 md:my:0' onClick={()=>{setToggle("hidden")}} to="/contact">Contact</Link>
       </div>
     </nav>
   )
