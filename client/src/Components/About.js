@@ -4,7 +4,7 @@ import aboutImg from '../images/about.png'
 const About = () => {
   return (
     <div className='flex flex-col md:flex-row justify-evenly m:0 md:mt-2 w-full h-auto'>
-      <div className='flex justify-center w-full md:w-1/3  md:mb-0 mb-8 h-[440px] md:h-[500px]'>
+      <div className='flex justify-center w-full md:w-1/3  md:mb-0 mb-8 h-auto'>
         <img className='rounded-md w-11/12 ' src={aboutImg} alt='about'  />
       </div>
       <div className='w-full md:w-3/5 '>
