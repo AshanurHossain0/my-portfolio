@@ -5,7 +5,12 @@ module.exports = {
     "./public/index.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "bungee":['Bungee Spice', 'cursive'],
+        "goldman":['Goldman', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
