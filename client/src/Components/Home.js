@@ -114,6 +114,10 @@ const Home = () => {
               <p className='text-xl  md:text-2xl text-yellow-600 '>Javascript</p>
             </div>
             <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
+              <Perform elId="ts" performance={70} src="https://img.icons8.com/?size=512&id=nCj4PvnCO0tZ&format=png" alt="js-logo" />
+              <p className='text-xl  md:text-2xl text-blue-600 '>Typescript</p>
+            </div>
+            <div className=' border border-red-300 rounded-md w-36 bg-indigo-50 h-auto flex flex-col items-center p-2 hover:shadow-2xl'>
               <Perform elId="node" performance={90} src="https://img.icons8.com/fluency/48/node-js.png" alt="node-logo" />
               <p className='text-xl  md:text-2xl text-green-600'>Node.js</p>
             </div>
